@@ -1,0 +1,14 @@
+@use "../utilities/flow" as *;
+
+header {
+  border-radius: 15px;
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+  img {
+    width: 3.5rem;
+  }
+  p:first-child {
+    margin-bottom: 0.3rem;
+  }
+  @include flex(1rem, row, space-between, center);
+}

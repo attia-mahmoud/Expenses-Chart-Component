@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"); /* --------------------- */
+/* Root */
+/* --------------------- */
+:root {
+  --clr-primary-soft-red: hsl(10deg, 79%, 65%);
+  --clr-primary-cyan: hsl(186deg, 34%, 60%);
+  --clr-neutral-dark-brown: hsl(25deg, 47%, 15%);
+  --clr-neutral-medium-brown: hsl(28deg, 10%, 53%);
+  --clr-neutral-cream: hsl(27deg, 66%, 92%);
+  --clr-neutral-pale-orange: hsl(33deg, 100%, 98%);
+  --fs-100: 0.7875rem;
+  --fs-200: 0.9rem;
+  --fs-300: 1.0125rem;
+  --fs-400: 1.125rem;
+  --fs-500: 1.265625rem;
+  --fs-600: 1.40625rem;
+  --fs-700: 1.6875rem;
+  --fs-800: 1.96875rem;
+  --fs-900: 2.25rem;
+}
+@media only screen and (min-width: 992px) {
+  :root {
+    --fs-100: 0.7875rem;
+    --fs-200: 0.9rem;
+    --fs-300: 1.0125rem;
+    --fs-400: 1.125rem;
+    --fs-500: 1.265625rem;
+    --fs-600: 1.40625rem;
+    --fs-700: 1.6875rem;
+    --fs-800: 1.96875rem;
+    --fs-900: 2.25rem;
+  }
+}
+
+/* --------------------- */
+/* Reset */
+/* --------------------- */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  overflow-x: hidden;
+}
+
+/* --------------------- */
+/* Typography */
+/* --------------------- */
+.fs-100 {
+  font-size: var(--fs-100);
+}
+
+.fs-200 {
+  font-size: var(--fs-200);
+}
+
+.fs-300 {
+  font-size: var(--fs-300);
+}
+
+.fs-400 {
+  font-size: var(--fs-400);
+}
+
+.fs-500 {
+  font-size: var(--fs-500);
+}
+
+.fs-600 {
+  font-size: var(--fs-600);
+}
+
+.fs-700 {
+  font-size: var(--fs-700);
+}
+
+.fs-800 {
+  font-size: var(--fs-800);
+}
+
+.fs-900 {
+  font-size: var(--fs-900);
+}
+
+.letter-spacing-1 {
+  letter-spacing: 3px;
+}
+
+.letter-spacing-2 {
+  letter-spacing: 2.5px;
+}
+
+.letter-spacing-3 {
+  letter-spacing: 2px;
+}
+
+.letter-spacing-4 {
+  letter-spacing: 1.5px;
+}
+
+.letter-spacing-5 {
+  letter-spacing: 1px;
+}
+
+.line-height-1 {
+  line-height: 3px;
+}
+
+.line-height-2 {
+  line-height: 2.5px;
+}
+
+.line-height-3 {
+  line-height: 2px;
+}
+
+.line-height-4 {
+  line-height: 1.5px;
+}
+
+.line-height-5 {
+  line-height: 1px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+.ff-dm-sans {
+  font-family: "DM Sans", sans-serif;
+}
+
+.text-primary-soft-red {
+  color: hsl(10deg, 79%, 65%);
+}
+
+.bg-primary-soft-red {
+  background-color: hsl(10deg, 79%, 65%);
+}
+
+.text-primary-cyan {
+  color: hsl(186deg, 34%, 60%);
+}
+
+.bg-primary-cyan {
+  background-color: hsl(186deg, 34%, 60%);
+}
+
+.text-neutral-dark-brown {
+  color: hsl(25deg, 47%, 15%);
+}
+
+.bg-neutral-dark-brown {
+  background-color: hsl(25deg, 47%, 15%);
+}
+
+.text-neutral-medium-brown {
+  color: hsl(28deg, 10%, 53%);
+}
+
+.bg-neutral-medium-brown {
+  background-color: hsl(28deg, 10%, 53%);
+}
+
+.text-neutral-cream {
+  color: hsl(27deg, 66%, 92%);
+}
+
+.bg-neutral-cream {
+  background-color: hsl(27deg, 66%, 92%);
+}
+
+.text-neutral-pale-orange {
+  color: hsl(33deg, 100%, 98%);
+}
+
+.bg-neutral-pale-orange {
+  background-color: hsl(33deg, 100%, 98%);
+}
+
+.d-block {
+  display: block;
+}
+
+.container {
+  padding-inline: 2em;
+  margin-inline: auto;
+  max-width: 80rem;
+}
+
+.center_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  border-radius: 15px;
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  width: 3.5rem;
+}
+header p:first-child {
+  margin-bottom: 0.3rem;
+}
+
+main {
+  max-width: 28rem;
+  min-width: 25rem;
+}
+
+section {
+  position: relative;
+  border-radius: 15px;
+  padding: 1.5rem;
+  padding-bottom: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+section > h1 {
+  margin-bottom: 2rem;
+}
+section .graph {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  text-align: center;
+}
+section .graph div {
+  margin-bottom: 0.5rem;
+}
+section .bar {
+  width: clamp(2rem, 2.25vw, 4rem);
+  border-radius: 5px;
+}
+section .break {
+  width: 100%;
+  height: 2px;
+  margin: 0 auto;
+}
+section .summary {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: right;
+}
+section .summary div {
+  position: absolute;
+  right: 1.5rem;
+}
+
+/*# sourceMappingURL=/main.77bb5cfd.css.map */
