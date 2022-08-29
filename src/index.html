@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
+    <link href='https://fonts.googleapis.com/css?family=Sacramento:400' rel='stylesheet' type='text/css'>
     <link
       rel="icon"
       type="image/png"
@@ -16,63 +16,63 @@
     <link rel="stylesheet" href="scss/main.scss" />
     <script src="./scripts/scripts.js" defer></script>
   </head>
-  <body class="ff-dm-sans bg-neutral-cream center_content">
+  <body class=" bg-neutral-cream center_content ">
     <main>
-      <header class="bg-primary-soft-red text-neutral-pale-orange">
+      <header class="text-neutral-pale-orange neon-text">
         <div class="balance">
-          <p class="fs-100">My balance</p>
-          <p class="fs-600 fw-700 letter-spacing-4">$<span id="balance">921</span>.<span id="balance-decimal">48</span></p>
+          <p class="fs-600 " >My balance</p>
+          <p class="fs-600 fw-700 letter-spacing-4 ">$<span id="balance">921</span>.<span id="balance-decimal">48</span></p>
         </div>
         <img src="./assets/images/logo.svg" alt="logo" />
       </header>
-      <section class="bg-neutral-pale-orange">
-        <h1 class="text-neutral-dark-brown fw-700">Spending - Last 7 days</h1>
-        <div class="graph">
-          <div class="stat">
+      <section class="neon-text neon-border">
+        <h1 class="fw-700 neon-text pulsate-effect" id="title">Spending - Last 7 days</h1>
+        <div class="graph fs-200">
+          <div class="stat ">
             <p></p>
-            <div class="bar bg-primary-soft-red"></div>
-            <p class="text-neutral-medium-brown fs-100">mon</p>
-          </div>
-          <div class="stat">
-            <p></p>
-            <div class="bar bg-primary-soft-red"></div>
-            <p class="text-neutral-medium-brown fs-100">tue</p>
+            <div class="bar bg-primary-cyan"></div>
+            <p class="">mon</p>
           </div>
           <div class="stat">
             <p></p>
             <div class="bar bg-primary-cyan"></div>
-            <p class="text-neutral-medium-brown fs-100">wed</p>
+            <p class="">tue</p>
           </div>
           <div class="stat">
             <p></p>
-            <div class="bar bg-primary-soft-red"></div>
-            <p class="text-neutral-medium-brown fs-100">thu</p>
+            <div class="bar bg-primary-purple"></div>
+            <p class="">wed</p>
           </div>
           <div class="stat">
             <p></p>
-            <div class="bar bg-primary-soft-red"></div>
-            <p class="text-neutral-medium-brown fs-100">fri</p>
+            <div class="bar bg-primary-cyan"></div>
+            <p class="">thu</p>
           </div>
           <div class="stat">
             <p></p>
-            <div class="bar bg-primary-soft-red"></div>
-            <p class="text-neutral-medium-brown fs-100">sat</p>
+            <div class="bar bg-primary-cyan"></div>
+            <p class="">fri</p>
           </div>
           <div class="stat">
             <p></p>
-            <div class="bar bg-primary-soft-red"></div>
-            <p class="text-neutral-medium-brown fs-100">sun</p>
+            <div class="bar bg-primary-cyan"></div>
+            <p class="">sat</p>
+          </div>
+          <div class="stat">
+            <p></p>
+            <div class="bar bg-primary-cyan"></div>
+            <p class="">sun</p>
           </div>
         </div>
 
-        <div class="break bg-neutral-cream"></div>
+        <div class="break neon-border bg-primary-purple"></div>
         <div>
-          <p class="text-neutral-medium-brown fs-200">Total this month</p>
+          <p class=" fs-700">Total this month</p>
           <div class="summary">
-            <p class="text-neutral-dark-brown fw-700 fs-900">$<span id="total">478.33</span></p>
+            <p class=" fw-700 fs-900">$<span id="total">478.33</span></p>
             <div class="">
-              <p class="text-neutral-dark-brown fw-700">+2.4%</p>
-              <p class="text-neutral-medium-brown fs-200">from last month</p>
+              <p class=" fw-700">+2.4%</p>
+              <p class=" fs-700">from last month</p>
             </div>
           </div>
         </div>

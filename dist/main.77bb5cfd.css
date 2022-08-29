@@ -4,9 +4,10 @@
 :root {
   --clr-primary-soft-red: hsl(10deg, 79%, 65%);
   --clr-primary-cyan: hsl(186deg, 34%, 60%);
+  --clr-primary-purple: rgb(142, 44, 228);
   --clr-neutral-dark-brown: hsl(25deg, 47%, 15%);
   --clr-neutral-medium-brown: hsl(28deg, 10%, 53%);
-  --clr-neutral-cream: hsl(27deg, 66%, 92%);
+  --clr-neutral-cream: hsl(27deg, 100%, 85%);
   --clr-neutral-pale-orange: hsl(33deg, 100%, 98%);
   --fs-100: 0.7875rem;
   --fs-200: 0.9rem;
@@ -243,6 +244,14 @@ body {
   background-color: hsl(186deg, 34%, 60%);
 }
 
+.text-primary-purple {
+  color: rgb(142, 44, 228);
+}
+
+.bg-primary-purple {
+  background-color: rgb(142, 44, 228);
+}
+
 .text-neutral-dark-brown {
   color: hsl(25deg, 47%, 15%);
 }
@@ -260,11 +269,11 @@ body {
 }
 
 .text-neutral-cream {
-  color: hsl(27deg, 66%, 92%);
+  color: hsl(27deg, 100%, 85%);
 }
 
 .bg-neutral-cream {
-  background-color: hsl(27deg, 66%, 92%);
+  background-color: hsl(27deg, 100%, 85%);
 }
 
 .text-neutral-pale-orange {
@@ -292,6 +301,7 @@ body {
 }
 
 header {
+  background-color: #b52b0f;
   border-radius: 15px;
   margin-bottom: 1rem;
   padding: 1.5rem;
@@ -300,6 +310,9 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  border: 0.2rem solid #fff;
+  border-radius: 2rem;
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #ec775f, 0 0 0.8rem #ec775f, 0 0 2.8rem #ec775f, inset 0 0 1.3rem #ec775f;
 }
 header img {
   width: 3.5rem;
@@ -319,6 +332,8 @@ main {
 }
 
 section {
+  background-color: #000000;
+  color: #fff;
   position: relative;
   border-radius: 15px;
   padding: 1.5rem;
@@ -328,9 +343,13 @@ section {
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
+  border-radius: 2rem;
 }
 section > h1 {
   margin-bottom: 2rem;
+}
+section #title {
+  font-size: 2.3rem;
 }
 section .graph {
   height: 12rem;
@@ -353,6 +372,7 @@ section .stat p:first-child {
 }
 section .stat:hover {
   filter: brightness(90%);
+  transform: scale(1.08);
 }
 section .stat:hover p:first-child {
   visibility: visible;
@@ -360,6 +380,9 @@ section .stat:hover p:first-child {
 section .bar {
   width: clamp(2rem, 2.25vw, 4rem);
   border-radius: 5px;
+  border: 0.2rem solid #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 1rem #76b5bc, 0 0 0.8rem #76b5bc, 0 0 2.8rem #76b5bc, inset 0 0 0.3rem #76b5bc;
 }
 section .break {
   width: 100%;
@@ -377,6 +400,21 @@ section .summary {
 section .summary div {
   position: absolute;
   right: 1.5rem;
+}
+
+body {
+  background-image: url("/wall.0484c4a6.jpg");
+  background-repeat: no-repeat;
+  background-position: fixed;
+}
+body .neon-text {
+  font-family: "Sacramento", sans-serif;
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #bc13fe, 0 0 82px #bc13fe, 0 0 92px #bc13fe, 0 0 102px #bc13fe, 0 0 151px #bc13fe;
+}
+body .neon-border {
+  border: 0.2rem solid #fff;
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #f8e9dd, 0 0 0.8rem #f8e9dd, 0 0 2.8rem #f8e9dd, inset 0 0 1.3rem #f8e9dd;
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */

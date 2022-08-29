@@ -1,3 +1,33 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+body {
+    background-image: url('../assets/images/wall.jpg');
+    background-repeat: no-repeat;
+    background-position: fixed;
+
+    .neon-text {
+        font-family: "Sacramento", sans-serif;
+        color: #fff;
+        text-shadow:
+          0 0 7px #fff,
+          0 0 10px #fff,
+          0 0 21px #fff,
+          0 0 42px #bc13fe,
+          0 0 82px #bc13fe,
+          0 0 92px #bc13fe,
+          0 0 102px #bc13fe,
+          0 0 151px #bc13fe;
+    }
+
+    .neon-border {
+        border: 0.2rem solid #fff;
+        box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #f8e9dd,
+        0 0 0.8rem #f8e9dd,
+        0 0 2.8rem #f8e9dd,
+        inset 0 0 1.3rem #f8e9dd;
+    }
+
+}

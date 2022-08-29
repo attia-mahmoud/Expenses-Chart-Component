@@ -1,6 +1,8 @@
 @use "../utilities/flow" as *;
 
 section {
+  background-color: #000000;
+  color: #fff;
   position: relative;
   border-radius: 15px;
   padding: 1.5rem;
@@ -9,6 +11,11 @@ section {
   & > h1 {
     margin-bottom: 2rem;
   }
+  #title {
+    font-size: 2.3rem;
+  }
+  
+
   .graph {
     height: 12rem;
     width: 100%;
@@ -25,6 +32,7 @@ section {
     }
     &:hover {
       filter: brightness(90%);
+      transform: scale(1.08);
       p:first-child {
         visibility: visible;
       }
@@ -33,6 +41,14 @@ section {
   .bar {
     width: clamp(2rem, 2.25vw, 4rem);
     border-radius: 5px;
+    border: 0.2rem solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 1rem #76b5bc,
+    0 0 0.8rem #76b5bc,
+    0 0 2.8rem #76b5bc,
+    inset 0 0 0.3rem #76b5bc;
   }
   .break {
     width: 100%;
@@ -47,4 +63,7 @@ section {
       right: 1.5rem;
     }
   }
+
+  border-radius: 2rem;
+  
 }

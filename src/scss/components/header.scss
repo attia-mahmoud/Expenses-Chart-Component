@@ -1,6 +1,7 @@
 @use "../utilities/flow" as *;
 
 header {
+  background-color: #b52b0f;
   border-radius: 15px;
   margin-bottom: 1rem;
   padding: 1.5rem;
@@ -18,5 +19,12 @@ header {
   }
   @include flex(1rem, row, space-between, center);
 
-
+  border: 0.2rem solid #fff;
+  border-radius: 2rem;
+  box-shadow: 0 0 .2rem #fff,
+  0 0 .2rem #fff,
+  0 0 2rem #ec775f,
+  0 0 0.8rem #ec775f,
+  0 0 2.8rem #ec775f,
+  inset 0 0 1.3rem #ec775f;
 }
