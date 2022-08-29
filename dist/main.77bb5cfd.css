@@ -303,6 +303,11 @@ header {
 }
 header img {
   width: 3.5rem;
+  cursor: pointer;
+  transition: all 250ms ease;
+}
+header img:hover {
+  transform: scaleX(-1);
 }
 header p:first-child {
   margin-bottom: 0.3rem;
@@ -328,6 +333,7 @@ section > h1 {
   margin-bottom: 2rem;
 }
 section .graph {
+  height: 12rem;
   width: 100%;
   display: flex;
   gap: 1rem;
@@ -338,6 +344,18 @@ section .graph {
 }
 section .graph div {
   margin-bottom: 0.5rem;
+}
+section .stat {
+  cursor: pointer;
+}
+section .stat p:first-child {
+  visibility: hidden;
+}
+section .stat:hover {
+  filter: brightness(90%);
+}
+section .stat:hover p:first-child {
+  visibility: visible;
 }
 section .bar {
   width: clamp(2rem, 2.25vw, 4rem);

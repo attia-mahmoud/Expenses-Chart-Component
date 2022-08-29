@@ -6,9 +6,17 @@ header {
   padding: 1.5rem;
   img {
     width: 3.5rem;
+    cursor: pointer;
+    transition: all 250ms ease;
+    &:hover {
+      transform: scaleX(-1);
+    }
   }
+
   p:first-child {
     margin-bottom: 0.3rem;
   }
   @include flex(1rem, row, space-between, center);
+
+
 }

@@ -140,12 +140,51 @@ var data = [{
   day: "sun",
   amount: 25.48
 }];
-var graph = document.querySelector(".graph").children; // console.log(graph);
+var graph = document.querySelector(".graph").children;
 
 for (var i = 0; i < data.length; i++) {
-  console.log("".concat(data[i].amount, "px"));
-  graph[i].children[0].style.height = "".concat(data[i].amount * 3, "px");
+  increaseHeightRecursive(0, data[i].amount, graph[i].children[1]);
+  graph[i].children[0].innerHTML = data[i].amount;
 }
+
+var numberSpeed = 0.1;
+var heightSpeed = 25;
+
+function increaseHeightRecursive(i, endHeight, element) {
+  if (i < endHeight) {
+    element.style.height = "".concat(i * 3, "px");
+    setTimeout(function () {
+      increaseHeightRecursive(i + 1, endHeight, element);
+    }, heightSpeed);
+  }
+}
+/* Call this function with a string containing the ID name to
+ * the element containing the number you want to do a count animation on.*/
+
+
+function increaseElementNumber(id) {
+  elt = document.getElementById(id);
+  endNbr = Number(document.getElementById(id).innerHTML);
+  increaseNumberRecursive(0, endNbr, elt);
+}
+/*A recursive function to increase the number.*/
+
+
+function increaseNumberRecursive(i, endNbr, elt) {
+  if (i <= endNbr) {
+    elt.innerHTML = i;
+    setTimeout(function () {
+      //Delay a bit before calling the function again.
+      increaseNumberRecursive(i + 1, endNbr, elt);
+    }, numberSpeed);
+  }
+}
+/*Function called on button click*/
+
+
+increaseElementNumber("balance");
+increaseElementNumber("balance-decimal");
+increaseElementNumber("total");
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -174,7 +213,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52745" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51315" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -10,11 +10,24 @@ section {
     margin-bottom: 2rem;
   }
   .graph {
+    height: 12rem;
     width: 100%;
     @include flex(1rem, row, space-between, flex-end);
     text-align: center;
     div {
       margin-bottom: 0.5rem;
+    }
+  }
+  .stat  { 
+    cursor: pointer;
+    p:first-child {
+      visibility: hidden;
+    }
+    &:hover {
+      filter: brightness(90%);
+      p:first-child {
+        visibility: visible;
+      }
     }
   }
   .bar {
